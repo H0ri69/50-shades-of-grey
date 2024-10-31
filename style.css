@@ -30,16 +30,7 @@ h1 {
   color: #333;
   text-transform: uppercase;
   letter-spacing: 2px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  border: 2px solid #333;
-  background-color: rgba(255, 255, 255, 0.8);
-  transition: all 0.3s ease;
-}
-
-h1:hover {
-  transform: scale(1.05);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 .divs > div {
@@ -57,6 +48,7 @@ h1:hover {
   transform: translateY(20px);
   animation: fadeInUp 1s ease forwards;
   animation-play-state: paused;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
 
 .divs > div.in-view > span {
@@ -270,4 +262,32 @@ h1:hover {
 .grey50 {
   background-color: rgb(5, 5, 5);
   color: rgb(250, 250, 250);
+}
+
+.grey26 > span,
+.grey27 > span,
+.grey28 > span,
+.grey29 > span,
+.grey30 > span,
+.grey31 > span,
+.grey32 > span,
+.grey33 > span,
+.grey34 > span,
+.grey35 > span,
+.grey36 > span,
+.grey37 > span,
+.grey38 > span,
+.grey39 > span,
+.grey40 > span,
+.grey41 > span,
+.grey42 > span,
+.grey43 > span,
+.grey44 > span,
+.grey45 > span,
+.grey46 > span,
+.grey47 > span,
+.grey48 > span,
+.grey49 > span,
+.grey50 > span {
+  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.3);
 }
