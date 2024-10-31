@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <section class="intro">
+        <div class="intro-text">
+            <h1>50 Shades of Gray</h1>
+        </div>
+    </section>
+    <section class="divs">
+        <section class="divs">
+            <div class="grey1"><span>Whisper White</span></div>
+            <div class="grey2"><span>Moonlit Mist</span></div>
+            <div class="grey3"><span>Silver Lining</span></div>
+            <div class="grey4"><span>Pearl Essence</span></div>
+            <div class="grey5"><span>Dove's Wing</span></div>
+            <div class="grey6"><span>Morning Fog</span></div>
+            <div class="grey7"><span>Silk Veil</span></div>
+            <div class="grey8"><span>Frosty Dawn</span></div>
+            <div class="grey9"><span>Gossamer Grey</span></div>
+            <div class="grey10"><span>Cloudy Horizon</span></div>
+            <div class="grey11"><span>Platinum Mist</span></div>
+            <div class="grey12"><span>Dusty Moonstone</span></div>
+            <div class="grey13"><span>Gentle Ash</span></div>
+            <div class="grey14"><span>Misty Harbor</span></div>
+            <div class="grey15"><span>Urban Frost</span></div>
+            <div class="grey16"><span>Stone Wash</span></div>
+            <div class="grey17"><span>Graphite Whisper</span></div>
+            <div class="grey18"><span>Twilight Haze</span></div>
+            <div class="grey19"><span>Shadow Play</span></div>
+            <div class="grey20"><span>Steel Wool</span></div>
+            <div class="grey21"><span>Stormy Sky</span></div>
+            <div class="grey22"><span>Slate Silhouette</span></div>
+            <div class="grey23"><span>Pewter Patina</span></div>
+            <div class="grey24"><span>Smoky Quartz</span></div>
+            <div class="grey25"><span>Ashen Mist</span></div>
+            <div class="grey26"><span>Granite Gleam</span></div>
+            <div class="grey27"><span>Charcoal Whisper</span></div>
+            <div class="grey28"><span>Phantom Grey</span></div>
+            <div class="grey29"><span>Onyx Haze</span></div>
+            <div class="grey30"><span>Midnight Ash</span></div>
+            <div class="grey31"><span>Obsidian Smoke</span></div>
+            <div class="grey32"><span>Raven's Wing</span></div>
+            <div class="grey33"><span>Mystic Shade</span></div>
+            <div class="grey34"><span>Twilight Shadow</span></div>
+            <div class="grey35"><span>Ebony Mist</span></div>
+            <div class="grey36"><span>Cosmic Dust</span></div>
+            <div class="grey37"><span>Nightfall Grey</span></div>
+            <div class="grey38"><span>Shadowy Depths</span></div>
+            <div class="grey39"><span>Stormcloud</span></div>
+            <div class="grey40"><span>Graphite Shadow</span></div>
+            <div class="grey41"><span>Dark Matter</span></div>
+            <div class="grey42"><span>Obsidian Night</span></div>
+            <div class="grey43"><span>Midnight Veil</span></div>
+            <div class="grey44"><span>Black Pearl</span></div>
+            <div class="grey45"><span>Onyx Dream</span></div>
+            <div class="grey46"><span>Phantom Black</span></div>
+            <div class="grey47"><span>Void</span></div>
+            <div class="grey48"><span>Eclipse</span></div>
+            <div class="grey49"><span>Cosmic Black</span></div>
+            <div class="grey50"><span>Infinite Dark</span></div>
+        </section>
+    </section>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('in-view');
+                    } else {
+                        entry.target.classList.remove('in-view');
+                    }
+                });
+            }, { threshold: 0.5 });
+
+            document.querySelectorAll('.divs > div').forEach(div => {
+                observer.observe(div);
+            });
+        });
+    </script>
+</body>
+
+</html>

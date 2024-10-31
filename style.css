@@ -1,0 +1,273 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-snap-type: y mandatory;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.intro {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  scroll-snap-align: start;
+}
+
+.intro-text {
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border: 2px solid #333;
+  background-color: rgba(255, 255, 255, 0.8);
+  transition: all 0.3s ease;
+}
+
+h1:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.divs > div {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  scroll-snap-align: start;
+}
+
+/* Text animation */
+.divs > div > span {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s ease forwards;
+  animation-play-state: paused;
+}
+
+.divs > div.in-view > span {
+  animation-play-state: running;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 50 shades of gray with content */
+.grey1 {
+  background-color: rgb(250, 250, 250);
+  color: rgb(5, 5, 5);
+}
+.grey2 {
+  background-color: rgb(245, 245, 245);
+  color: rgb(10, 10, 10);
+}
+.grey3 {
+  background-color: rgb(240, 240, 240);
+  color: rgb(15, 15, 15);
+}
+.grey4 {
+  background-color: rgb(235, 235, 235);
+  color: rgb(20, 20, 20);
+}
+.grey5 {
+  background-color: rgb(230, 230, 230);
+  color: rgb(25, 25, 25);
+}
+.grey6 {
+  background-color: rgb(225, 225, 225);
+  color: rgb(30, 30, 30);
+}
+.grey7 {
+  background-color: rgb(220, 220, 220);
+  color: rgb(35, 35, 35);
+}
+.grey8 {
+  background-color: rgb(215, 215, 215);
+  color: rgb(40, 40, 40);
+}
+.grey9 {
+  background-color: rgb(210, 210, 210);
+  color: rgb(45, 45, 45);
+}
+.grey10 {
+  background-color: rgb(205, 205, 205);
+  color: rgb(50, 50, 50);
+}
+.grey11 {
+  background-color: rgb(200, 200, 200);
+  color: rgb(55, 55, 55);
+}
+.grey12 {
+  background-color: rgb(195, 195, 195);
+  color: rgb(60, 60, 60);
+}
+.grey13 {
+  background-color: rgb(190, 190, 190);
+  color: rgb(65, 65, 65);
+}
+.grey14 {
+  background-color: rgb(185, 185, 185);
+  color: rgb(70, 70, 70);
+}
+.grey15 {
+  background-color: rgb(180, 180, 180);
+  color: rgb(75, 75, 75);
+}
+.grey16 {
+  background-color: rgb(175, 175, 175);
+  color: rgb(80, 80, 80);
+}
+.grey17 {
+  background-color: rgb(170, 170, 170);
+  color: rgb(85, 85, 85);
+}
+.grey18 {
+  background-color: rgb(165, 165, 165);
+  color: rgb(90, 90, 90);
+}
+.grey19 {
+  background-color: rgb(160, 160, 160);
+  color: rgb(95, 95, 95);
+}
+.grey20 {
+  background-color: rgb(155, 155, 155);
+  color: rgb(100, 100, 100);
+}
+.grey21 {
+  background-color: rgb(150, 150, 150);
+  color: rgb(105, 105, 105);
+}
+.grey22 {
+  background-color: rgb(145, 145, 145);
+  color: rgb(110, 110, 110);
+}
+.grey23 {
+  background-color: rgb(140, 140, 140);
+  color: rgb(115, 115, 115);
+}
+.grey24 {
+  background-color: rgb(135, 135, 135);
+  color: rgb(120, 120, 120);
+}
+.grey25 {
+  background-color: rgb(130, 130, 130);
+  color: rgb(125, 125, 125);
+}
+.grey26 {
+  background-color: rgb(125, 125, 125);
+  color: rgb(130, 130, 130);
+}
+.grey27 {
+  background-color: rgb(120, 120, 120);
+  color: rgb(135, 135, 135);
+}
+.grey28 {
+  background-color: rgb(115, 115, 115);
+  color: rgb(140, 140, 140);
+}
+.grey29 {
+  background-color: rgb(110, 110, 110);
+  color: rgb(145, 145, 145);
+}
+.grey30 {
+  background-color: rgb(105, 105, 105);
+  color: rgb(150, 150, 150);
+}
+.grey31 {
+  background-color: rgb(100, 100, 100);
+  color: rgb(155, 155, 155);
+}
+.grey32 {
+  background-color: rgb(95, 95, 95);
+  color: rgb(160, 160, 160);
+}
+.grey33 {
+  background-color: rgb(90, 90, 90);
+  color: rgb(165, 165, 165);
+}
+.grey34 {
+  background-color: rgb(85, 85, 85);
+  color: rgb(170, 170, 170);
+}
+.grey35 {
+  background-color: rgb(80, 80, 80);
+  color: rgb(175, 175, 175);
+}
+.grey36 {
+  background-color: rgb(75, 75, 75);
+  color: rgb(180, 180, 180);
+}
+.grey37 {
+  background-color: rgb(70, 70, 70);
+  color: rgb(185, 185, 185);
+}
+.grey38 {
+  background-color: rgb(65, 65, 65);
+  color: rgb(190, 190, 190);
+}
+.grey39 {
+  background-color: rgb(60, 60, 60);
+  color: rgb(195, 195, 195);
+}
+.grey40 {
+  background-color: rgb(55, 55, 55);
+  color: rgb(200, 200, 200);
+}
+.grey41 {
+  background-color: rgb(50, 50, 50);
+  color: rgb(205, 205, 205);
+}
+.grey42 {
+  background-color: rgb(45, 45, 45);
+  color: rgb(210, 210, 210);
+}
+.grey43 {
+  background-color: rgb(40, 40, 40);
+  color: rgb(215, 215, 215);
+}
+.grey44 {
+  background-color: rgb(35, 35, 35);
+  color: rgb(220, 220, 220);
+}
+.grey45 {
+  background-color: rgb(30, 30, 30);
+  color: rgb(225, 225, 225);
+}
+.grey46 {
+  background-color: rgb(25, 25, 25);
+  color: rgb(230, 230, 230);
+}
+.grey47 {
+  background-color: rgb(20, 20, 20);
+  color: rgb(235, 235, 235);
+}
+.grey48 {
+  background-color: rgb(15, 15, 15);
+  color: rgb(240, 240, 240);
+}
+.grey49 {
+  background-color: rgb(10, 10, 10);
+  color: rgb(245, 245, 245);
+}
+.grey50 {
+  background-color: rgb(5, 5, 5);
+  color: rgb(250, 250, 250);
+}
